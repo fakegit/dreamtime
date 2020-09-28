@@ -36,14 +36,6 @@ import { dreamtime } from '~/modules/updater'
 export default {
   layout: 'wizard',
 
-  middleware({ redirect, route }) {
-    if (!route.query.forced) {
-      if (!dreamtime.available) {
-        redirect('/')
-      }
-    }
-  },
-
   computed: {
     updater() {
       return dreamtime

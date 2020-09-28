@@ -20,7 +20,7 @@
 
     <div class="project__content">
       <div v-if="!requirements.power.checkpoints" class="notification notification--warning">
-        This component is required to continue using {{ $dreamtime.name }}.
+        This component needs to be installed to continue.
       </div>
 
       <div v-else class="notification">
